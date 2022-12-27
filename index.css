@@ -1,0 +1,31 @@
+  /* Configure Top Menu */
+  .topnav {
+    background-color: #999;
+    overflow: hidden;
+  }
+  .topnav a {
+    float: left;
+    background-color: #b3d4fc;
+    color: #222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  .topnav a:hover {
+    background-color: #fcdbb3;
+    color: black;
+  }
+  .topnav a.active {
+    background-color: #b3fcdb;
+  }
+  
+  /* set bg color */
+  * {
+    background-color: #00000000;
+  }
+  
+  /*center main title*/
+  .title {
+    text-align: center;
+  }
