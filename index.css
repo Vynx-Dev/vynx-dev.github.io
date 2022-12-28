@@ -1,31 +1,88 @@
-  /* Configure Top Menu */
-  .topnav {
-    background-color: #999;
-    overflow: hidden;
+/* Configure Top Menu */
+.topnav{
+  background-color: #999;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  background-color: #b3d4fc;
+  color: #222;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.topnav a:hover {
+  background-color: #fcdbb3;
+  color: black;
+}
+.topnav a.active {
+  background-color: #b3fcdb;
+}
+  
+/* Configure Mobile Menu */
+.mobnav {
+  background-color: #999;
+  overflow: hidden;
+}
+.mobnav a {
+  float: left;
+  background-color: #b3d4fc;
+  color: #222;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.mobnav a:hover {
+  background-color: #fcdbb3;
+  color: black;
+}
+.mobnav a.active {
+  background-color: #b3fcdb;
+}  
+.mobnav {  
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+/*center main title*/
+.title {
+  text-align: center;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark){
+  p {
+    color: white;
   }
-  .topnav a {
-    float: left;
-    background-color: #b3d4fc;
-    color: #222;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.5em;
+  h1 {
+    color: white;
+  }  
+  body {
+    background-color: black;
   }
-  .topnav a:hover {
-    background-color: #fcdbb3;
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light){
+  p {
     color: black;
   }
-  .topnav a.active {
-    background-color: #b3fcdb;
+  h1 {
+    color: black;
+  }  
+  body {
+    background-color: white;
   }
-  
-  /* set bg color */
-  * {
-    background-color: #0000;
+}
+
+@media only screen and (hover: none) and (pointer: coarse)){
+  .mobnav {
+    visibility: visible;
   }
-  
-  /*center main title*/
-  .title {
-    text-align: center;
+  .topnav {
+    visibility: hidden;
   }
+}
