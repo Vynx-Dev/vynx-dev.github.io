@@ -2,6 +2,7 @@
 .topnav{
   background-color: #999;
   overflow: hidden;
+  position: sticky;
 }
 .topnav a {
   float: left;
@@ -45,6 +46,7 @@
   visibility: hidden;
   bottom: 0;
   left: 0;
+  position: sticky;
 }
 
 /*center main title*/
@@ -77,7 +79,7 @@
     background-color: white;
   }
 }
-
+// Show and Hide Mobile
 @media only screen and (hover: none) and (pointer: coarse)){
   .mobnav {
     visibility: visible;
@@ -85,4 +87,13 @@
   .topnav {
     visibility: hidden;
   }
+}
+
+.softdrop2 {
+  display: none;
+  overflow: auto;
+}
+
+.softdrop:hover .softdrop2 {
+  display: block;
 }
