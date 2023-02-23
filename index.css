@@ -79,6 +79,7 @@
     background-color: white;
   }
 }
+/*
 // Show and Hide Mobile
 @media only screen and (hover: none) and (pointer: coarse)){
   .mobnav {
@@ -88,7 +89,7 @@
     visibility: hidden;
   }
 }
-
+*/
 .softdrop2 {
   display: none;
   overflow: auto;
@@ -96,4 +97,11 @@
 
 .softdrop:hover .softdrop2 {
   display: block;
+}
+.nocolor {
+  color: white;
+  text-decoration: none;
+}
+.nocolor:hover {
+  color: #fcdbb3;
 }
