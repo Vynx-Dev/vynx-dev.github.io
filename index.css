@@ -21,7 +21,7 @@
   background-color: #b3fcdb;
 }
   
-/* Configure Mobile Menu */
+/* Configure Mobile Menu 
 .mobnav {
   background-color: #999;
   overflow: hidden;
@@ -48,7 +48,7 @@
   left: 0;
   position: sticky;
 }
-
+*/
 /*center main title*/
 .title {
   text-align: center;
